@@ -8,18 +8,19 @@
 
 int main(void)
 {
-	long int n;
+	int n;
 
 	if (n > 0)
 	{
-		printf("%li is positive\n", n);
+		printf("%i is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("%li is zero\n", n);
+		printf("%i is zero\n", n);
 	}
 	else
 	{
-		printf("%li is negative\n", n);
+		printf("%i is negative\n", n);
 	}
+	return (0);
 }
