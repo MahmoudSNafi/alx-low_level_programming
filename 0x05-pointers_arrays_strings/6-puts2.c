@@ -10,11 +10,19 @@
 
 void puts2(char *str)
 {
-	unsigned long int i;
 
-	for (i = 0; i <= strlen(str) - 1; i += 2)
+	if (str == NULL)
 	{
-		_putchar(str[i]);
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		unsigned long int i;
+
+		for (i = 0; i <= strlen(str) - 1; i += 2)
+		{
+			_putchar(str[i]);
+		}
+		_putchar('\n');
+	}
 }
