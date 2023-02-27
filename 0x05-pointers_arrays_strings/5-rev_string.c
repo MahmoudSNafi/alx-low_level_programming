@@ -13,7 +13,7 @@ void rev_string(char *s)
 	unsigned long int i;
 	char old_char;
 
-	for (i = 0; i <= strlen(s) / 2; i++)
+	for (i = 0; i < strlen(s) / 2; i++)
 	{
 		old_char = s[i];
 		s[i] = s[strlen(s) - i - 1];
