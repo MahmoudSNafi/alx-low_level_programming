@@ -19,19 +19,13 @@ unsigned int _strspn(char *s, char *accept)
 		for (j = 0; accept[j] >= '\0'; j++)
 		{
 			if (s[i] == accept[j])
-			{	count++;
+			{	
+				count++;
 				break;
 			}
-			else
+			else if (accept[j + 1] == '\0')
 			{
-				if (accept[j] != '\0')
-				{
-					continue;
-				}
-				else
-				{
-					return (count);
-				}
+				return (count);
 			}
 		}
 	}
