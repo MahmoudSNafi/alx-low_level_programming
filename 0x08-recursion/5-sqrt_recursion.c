@@ -12,7 +12,7 @@ int _find_root(int root, int num)
 {
 	if (root * root < num)
 	{
-		return(_find_root(root + 1, num));
+		return (_find_root(root + 1, num));
 	}
 	else if (root * root == num)
 	{
